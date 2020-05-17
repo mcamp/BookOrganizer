@@ -32,6 +32,16 @@ MOChapter >> book: aBook [
 	book := aBook
 ]
 
+{ #category : #private }
+MOChapter >> externalOpen [
+
+	OSSUnixSubprocess new
+	command: 'xdg-open';
+	arguments: {self link};
+	runAndWaitOnExitDo: [ :process :outString  | ].
+	
+]
+
 { #category : #initialization }
 MOChapter >> initialize [
 
@@ -70,6 +80,13 @@ MOChapter >> number [
 { #category : #accessing }
 MOChapter >> number: aNumber [
 	number := aNumber
+]
+
+{ #category : #read }
+MOChapter >> open [
+	self externalOpen.
+	
+	self read
 ]
 
 { #category : #converting }
