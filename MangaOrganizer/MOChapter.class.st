@@ -5,8 +5,8 @@ Class {
 		'book',
 		'name',
 		'number',
-		'link',
-		'read'
+		'read',
+		'link'
 	],
 	#classVars : [
 		'instance'
@@ -47,7 +47,6 @@ MOChapter >> initialize [
 
 	number := 0.
 	name := 'Untitled'.
-	link := ''.
 	read := false.
 ]
 
@@ -57,9 +56,8 @@ MOChapter >> link [
 ]
 
 { #category : #accessing }
-MOChapter >> link: anUrl [
-
-	link := anUrl
+MOChapter >> link: aString [
+	link := aString
 ]
 
 { #category : #accessing }

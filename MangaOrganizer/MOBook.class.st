@@ -3,9 +3,9 @@ Class {
 	#superclass : #Object,
 	#instVars : [
 		'name',
-		'link',
 		'type',
-		'chapters'
+		'chapters',
+		'link'
 	],
 	#category : #MangaOrganizer
 }
@@ -36,7 +36,6 @@ MOBook >> chapters [
 MOBook >> initialize [
 
 	name := 'Untitled'.
-	link := ''.
 	type := #undefined.
 	chapters := SortedCollection sortUsing: [ :elem1 :elem2 | elem1 < elem2 ]
 ]
@@ -47,8 +46,8 @@ MOBook >> link [
 ]
 
 { #category : #accessing }
-MOBook >> link: anUrl [
-	link := anUrl
+MOBook >> link: aString [
+	link := aString
 ]
 
 { #category : #accessing }
