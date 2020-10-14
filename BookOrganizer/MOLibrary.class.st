@@ -7,7 +7,7 @@ Class {
 	#classVars : [
 		'instance'
 	],
-	#category : #MangaOrganizer
+	#category : #BookOrganizer
 }
 
 { #category : #accessing }

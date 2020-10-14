@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'manga'
 	],
-	#category : #'MangaOrganizer-Tests'
+	#category : #'BookOrganizer-Tests'
 }
 
 { #category : #running }

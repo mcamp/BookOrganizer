@@ -1,7 +1,7 @@
 Class {
 	#name : #MOMockRetriever,
 	#superclass : #MORetriever,
-	#category : #'MangaOrganizer-Tests'
+	#category : #'BookOrganizer-Tests'
 }
 
 { #category : #book }

@@ -7,7 +7,7 @@ Class {
 		'chapters',
 		'link'
 	],
-	#category : #MangaOrganizer
+	#category : #BookOrganizer
 }
 
 { #category : #adding }

@@ -1,7 +1,7 @@
 Class {
 	#name : #MOChapterMockup,
 	#superclass : #MOChapter,
-	#category : #'MangaOrganizer-Tests'
+	#category : #'BookOrganizer-Tests'
 }
 
 { #category : #private }

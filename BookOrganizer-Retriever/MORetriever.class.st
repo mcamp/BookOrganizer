@@ -5,7 +5,7 @@ Class {
 		'name',
 		'location'
 	],
-	#category : #'MangaOrganizer-Retriever'
+	#category : #'BookOrganizer-Retriever'
 }
 
 { #category : #accessing }

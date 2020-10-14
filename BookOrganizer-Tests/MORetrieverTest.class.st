@@ -5,7 +5,7 @@ Class {
 		'retriever',
 		'book'
 	],
-	#category : #'MangaOrganizer-Tests'
+	#category : #'BookOrganizer-Tests'
 }
 
 { #category : #running }

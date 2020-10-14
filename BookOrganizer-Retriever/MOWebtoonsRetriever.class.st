@@ -1,5 +1,5 @@
 Class {
 	#name : #MOWebtoonsRetriever,
 	#superclass : #MORetriever,
-	#category : #'MangaOrganizer-Retriever'
+	#category : #'BookOrganizer-Retriever'
 }
