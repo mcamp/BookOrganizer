@@ -11,6 +11,12 @@ Class {
 }
 
 { #category : #adding }
+MOBook >> addAllChapters: chapterList [
+
+	chapters addAll: chapterList
+]
+
+{ #category : #adding }
 MOBook >> addChapter: aChapter [
 	
 	aChapter book: self.
