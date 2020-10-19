@@ -35,11 +35,7 @@ MOChapter >> book: aBook [
 { #category : #private }
 MOChapter >> externalOpen [
 
-	OSSUnixSubprocess new
-	command: 'xdg-open';
-	arguments: {self link};
-	runAndWaitOnExitDo: [ :process :outString  | ].
-	
+	LibC runCommand: 'xdg-open ' , self link escaped.
 ]
 
 { #category : #initialization }

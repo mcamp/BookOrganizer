@@ -27,6 +27,14 @@ MOLibrary >> books [
 	^books
 ]
 
+{ #category : #'gt-inspector-extension' }
+MOLibrary >> gtInspectorBooksIn: composite [
+	<gtInspectorPresentationOrder: -15>
+	composite list
+		title: 'Books';
+		display: [ self books ]
+]
+
 { #category : #initialization }
 MOLibrary >> initialize [
 

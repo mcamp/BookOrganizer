@@ -38,6 +38,18 @@ MOBook >> chapters [
 	^chapters
 ]
 
+{ #category : #'gt-inspector-extension' }
+MOBook >> gtInspectorChaptersIn: composite [
+	<gtInspectorPresentationOrder: -15>
+	composite list
+		title: 'Chapters';
+		display: [ self chapters ];
+		icon: [ :chapter| 
+			chapter wasRead 
+				ifTrue: [ self iconNamed: 'glamorousGreenCircle'] 
+				ifFalse: [ self iconNamed: 'glamorousGrayCircle' ] ]
+]
+
 { #category : #initialization }
 MOBook >> initialize [
 
@@ -64,6 +76,13 @@ MOBook >> name [
 { #category : #accessing }
 MOBook >> name: aString [
 	name := aString
+]
+
+{ #category : #printing }
+MOBook >> printOn: aStream [
+	aStream nextPutAll: 'Book[';
+		nextPutAll: self name;
+		nextPutAll: ']'
 ]
 
 { #category : #read }
