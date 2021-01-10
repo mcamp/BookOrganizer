@@ -30,11 +30,6 @@ MORetriever >> name: anObject [
 
 { #category : #retrieve }
 MORetriever >> retrieveBook: aBook location: aString [
-	aBook link: aString
-]
-
-{ #category : #retrieve }
-MORetriever >> retrieveChaptersFromBook: aBook [
-
-	self subclassResponsibility
+	aBook link: aString.
+	self retrieveChaptersFromBook: aBook
 ]

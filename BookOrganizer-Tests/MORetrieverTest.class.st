@@ -40,9 +40,6 @@ MORetrieverTest >> testIdentifier [
 MORetrieverTest >> testRetrieveChapters [
 
 	retriever retrieveBook: book location: 'MyMock-mybook'.
-	self assert: book chapters size equals: 0.
-	
-	retriever retrieveChaptersFromBook: book.
 	self assert: book chapters size equals: 3.
 	self assert: book chapters first link equals: 'MyMock-mybook/1'.
 	self assert: book chapters second link equals: 'MyMock-mybook/2'.

@@ -5,7 +5,8 @@ Class {
 		'name',
 		'type',
 		'chapters',
-		'link'
+		'link',
+		'library'
 	],
 	#category : #BookOrganizer
 }
@@ -59,6 +60,16 @@ MOBook >> initialize [
 ]
 
 { #category : #accessing }
+MOBook >> library [
+	^ library
+]
+
+{ #category : #accessing }
+MOBook >> library: aLibrary [
+	library := aLibrary
+]
+
+{ #category : #accessing }
 MOBook >> link [
 	^ link
 ]
@@ -90,4 +101,9 @@ MOBook >> readUntil: aNumber [
 	"read until aNumber (inclusive) index of chapters"
 	
 	chapters from: 1 to: aNumber do: [ :chapter| chapter read]
+]
+
+{ #category : #actions }
+MOBook >> save: persistance [
+	persistance save: self
 ]

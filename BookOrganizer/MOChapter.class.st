@@ -94,6 +94,12 @@ MOChapter >> read [
 	read := true.
 ]
 
+{ #category : #actions }
+MOChapter >> save: persistance [
+
+	persistance save: self
+]
+
 { #category : #read }
 MOChapter >> unread [
 

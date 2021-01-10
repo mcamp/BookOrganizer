@@ -46,6 +46,16 @@ MOWebtoonsRetriever >> findChapterCollectionLinks: aLink [
 	^ (1 to: lastPage) collect: [ :page|  aLink asUrl queryAt: 'page' put: page].
 ]
 
+{ #category : #accessing }
+MOWebtoonsRetriever >> location [
+	^ 'https://www.webtoons.com/'
+]
+
+{ #category : #accessing }
+MOWebtoonsRetriever >> name [
+	^ 'Webtoons'
+]
+
 { #category : #retrieve }
 MOWebtoonsRetriever >> retrieveChaptersFromBook: aBook [
 
